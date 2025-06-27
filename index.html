@@ -542,10 +542,33 @@ html {
 }
 
 
+.video-section {
+    text-align: center;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background: linear-gradient(to right, #e0f7fa, #c2e9fb);
+
+    box-shadow: 0 0 10px rgba(224, 9, 9, 0.1);
+    border-radius: 20px;
+}
+
+.video-section video {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
 
     </style>
 </head>
 <body>
+
+
 
 <section id="home">
     <header class="main-header">
@@ -564,8 +587,8 @@ html {
     <ul class="nav-links">
       <li><a href="#home">Home</a></li>
       <li><a href="#galary">Gallery</a></li>
+      <li><a href="#memory-video">Memories</a></li>
       <li><a href="#guest">Suggestion Box</a></li>
-      <li><a href="#memories">Memories</a></li>
       <li><a href="#contact">About Us</a></li>
     </ul>
   </nav>
@@ -1129,8 +1152,21 @@ html {
     <button class="arrow" id="gallery-next">&#10095;</button>
   </div>
 </div>
-<script src="p.js"></script>
+
 </section>
+
+
+<section class="video-section" id="memory-video">
+  <h2>🎥 School Memories</h2>
+  <p style="font-size: 18px; color: #333;">Click to relive the moments from our journey</p>
+
+  <video autoplay muted playsinline loop controls width="100%" style="border-radius: 12px;">
+    <source src="memories.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</section>
+
+
 
 
 
