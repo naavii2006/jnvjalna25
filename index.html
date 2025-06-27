@@ -541,6 +541,84 @@ html {
     white-space: pre-line;
 }
 
+* for mobiles*/
+
+@media (max-width: 768px) {
+  /* Adjust nav for small screens */
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .nav-links li {
+    width: 100%;
+  }
+
+  .nav-links li a {
+    display: block;
+    width: 100%;
+  }
+
+  /* Responsive header */
+  .header-content h1 {
+    font-size: 24px;
+  }
+
+  .header-content p {
+    font-size: 18px;
+  }
+
+  /* Symbols, school, gallery, guestbook */
+  .symbol,
+  .school,
+  .gallery,
+  .guestbook-section,
+  .poll-container,
+  .video-section {
+    width: 90%;
+    margin: 20px auto;
+    padding: 15px;
+  }
+
+  .slider-wrapper {
+    height: 250px;
+  }
+
+  /* Flip card resizing */
+  .name-grid {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .flip-card {
+    width: 90%;
+    height: 100px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-section {
+    margin-bottom: 20px;
+  }
+
+  iframe {
+    width: 100% !important;
+    height: auto !important;
+  }
+}
+
+
 
     </style>
 </head>
