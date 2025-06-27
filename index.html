@@ -61,99 +61,76 @@ html {
 }
 
 /* ======= PROFESSIONAL NAVBAR ======= */
-.pro-navbar {
-    position: sticky;
-    top: 0;
-    background-color: #1b1f24;
-    color: white;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-    z-index: 999;
-}
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@400;600&display=swap');
 
-.nav-wrapper {
-    max-width: 1200px;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 12px 20px;
-}
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-.nav-logo {
-    font-size: 22px;
-    font-weight: bold;
-    color: #f9b234;
-    letter-spacing: 1px;
-}
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #f9f6ee, #e8f0ff);
+    }
 
-.nav-links {
-    display: flex;
-    list-style: none;
-    gap: 30px;
-}
+    nav {
+      background-color: #ffffffcc;
+      backdrop-filter: blur(10px);
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      border-radius: 0 0 20px 20px;
+    }
 
-.nav-links li a {
-    text-decoration: none;
-    color: #f0f0f0;
-    font-size: 16px;
-    position: relative;
-    padding: 6px 8px;
-    transition: all 0.3s ease;
-}
-
-.nav-links li a:hover,
-.nav-links li a.active {
-    color: #f9b234;
-}
-
-.nav-links li a::after {
-    content: '';
-    display: block;
-    height: 2px;
-    width: 0%;
-    background-color: #f9b234;
-    transition: width 0.3s;
-    margin-top: 3px;
-}
-
-.nav-links li a:hover::after,
-.nav-links li a.active::after {
-    width: 100%;
-}
-
-/* ======= MOBILE MENU ======= */
-.nav-toggle {
-    display: none;
-    font-size: 24px;
-    color: white;
-    cursor: pointer;
-}
-
-@media (max-width: 768px) {
-    .nav-toggle {
-        display: block;
+    .logo {
+      font-family: 'Great Vibes', cursive;
+      font-size: 32px;
+      color: #d94f4f;
+      letter-spacing: 1px;
     }
 
     .nav-links {
-        flex-direction: column;
-        background-color: #1b1f24;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        width: 100%;
-        display: none;
-        padding: 10px 0;
-    }
-
-    .nav-links.active {
-        display: flex;
+      list-style: none;
+      display: flex;
+      gap: 25px;
     }
 
     .nav-links li a {
-        padding: 12px 20px;
-        font-size: 18px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 600;
+      padding: 8px 15px;
+      border: 2px solid transparent;
+      border-radius: 10px;
+      transition: all 0.3s ease-in-out;
     }
-}
+
+    .nav-links li a:hover {
+      color: #ff6f61;
+      border-color: #ff6f61;
+      background-color: #ffeceb;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .nav-links {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+        margin-top: 10px;
+      }
+    }
+
 
 .symbol {
     max-width: 1000px;
@@ -583,20 +560,16 @@ html {
 
 
 
-<nav class="pro-navbar">
-  <div class="nav-wrapper">
-    <div class="nav-logo">JNV Jalna</div>
-    <div class="nav-toggle" onclick="toggleMenu()">☰</div>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="#home" class="active">Home</a></li>
-      <li><a href="#galary">Gallery</a></li>
-      <li><a href="#guest">Guestbook</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#events">Events</a></li>
-      <li><a href="#contact">Contact</a></li>
+<nav>
+    <div class="logo">JNV Jalna</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#chatbox">Suggestion Box</a></li>
+      <li><a href="#memories">Memories</a></li>
+      <li><a href="#about">About Us</a></li>
     </ul>
-  </div>
-</nav>
+  </nav>
 
 
 
